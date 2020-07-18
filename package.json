@@ -1,0 +1,26 @@
+{
+  "name": "supermario",
+  "version": "1.0.0",
+  "description": "Super Mario Season 1",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve ./public",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitmustaf/SuperMario.git"
+  },
+  "keywords": [
+    "Mario"
+  ],
+  "author": "Mustafiaaa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitmustaf/SuperMario/issues"
+  },
+  "homepage": "https://github.com/gitmustaf/SuperMario#readme",
+  "dependencies": {
+    "serve": "^11.3.2"
+  }
+}
