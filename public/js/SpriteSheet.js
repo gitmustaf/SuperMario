@@ -13,8 +13,8 @@ export default class SpriteSheet {
             .getContext('2d')
             .drawImage(
                 this.image,
-                x = this.width,
-                y = this.height,
+                x * this.width,
+                y * this.height,
                 this.width,
                 this.height,
                 0,
@@ -26,5 +26,9 @@ export default class SpriteSheet {
     draw(name, context, x, y){
         const buffer = this.tiles.get(name);
         context.drawImage(buffer, x, y);
+    }
+
+    drawTile(name, context, x, y){
+        this.draw(name, context, x*this.width, y*this.height);
     }
 }
